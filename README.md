@@ -1,6 +1,6 @@
 # base_de_datos_proyecto_estudio_g3
 
-Asignatura: Bases de Datos 1
+## Asignatura: Bases de Datos 1
 
 ### Integrantes:
 
