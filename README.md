@@ -5,7 +5,7 @@
 - **Fernández Gotusso, María Daniela** – DNI: 43822520  
 - **Machuca, Juan Gabriel** – DNI: 40048379  
 
-📅 Año: 2025  
+Año: 2025  
 
 ---
 
