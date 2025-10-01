@@ -9,3 +9,11 @@ Integrantes:
 °
 °
 Año: 2025
+
+## CAPITULO 1:INTRODUCCIÓN
+
+1.1 Tema
+Automatización de la gestión de ventas e inventario para una red de franquicias.
+
+
+
