@@ -1,6 +1,7 @@
 # Proyecto Gestor de Franquicias
 
 ## Integrantes
+- **Benitez, Lucas Emmanuel** – DNI: 43930915
 - **Díaz, Cristian Leandro** – DNI: 42734520
 - **Fernandez Gotusso, Maria Daniela** – DNI: 43822520
 - **Machuca, Juan Gabriel** – DNI: 40048379
