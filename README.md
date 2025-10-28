@@ -75,7 +75,7 @@ Este proyecto se centrará en el procesamiento y la administración de datos cla
 El alcance del proyecto no incluye funcionalidades de integración con proveedores para el reabastecimiento de stock, ni se profundizará en el análisis de datos a un nivel que exceda los informes y reportes básicos para la toma de decisiones a nivel gerencial.
 
 ---
-# CAPITULO 2: MARCO CONCEPTUAL O REFERENCIAL
+## CAPITULO 2: MARCO CONCEPTUAL O REFERENCIAL
 
 ### Tema 2: “Gestión de Transacciones y Transacciones Anidadas” 
 El manejo de datos en un sistema de administración centralizado demanda un mecanismo riguroso que garantice la integridad operacional. Las transacciones representan la unidad fundamental de trabajo, diseñadas para ser indivisibles. Su implementación es esencial, ya que adhieren a las propiedades ACID (Atomicidad, Consistencia, Aislamiento y Durabilidad), asegurando que las operaciones críticas (como el registro de una venta que afecta tanto a la tabla Venta como al stock del Producto) se ejecuten completamente o no se ejecuten en absoluto. 
