@@ -75,7 +75,16 @@ Este proyecto se centrará en el procesamiento y la administración de datos cla
 El alcance del proyecto no incluye funcionalidades de integración con proveedores para el reabastecimiento de stock, ni se profundizará en el análisis de datos a un nivel que exceda los informes y reportes básicos para la toma de decisiones a nivel gerencial.
 
 ---
+# CAPITULO 2: MARCO CONCEPTUAL O REFERENCIAL
 
+### Tema 2: “Gestión de Transacciones y Transacciones Anidadas” 
+El manejo de datos en un sistema de administración centralizado demanda un mecanismo riguroso que garantice la integridad operacional. Las transacciones representan la unidad fundamental de trabajo, diseñadas para ser indivisibles. Su implementación es esencial, ya que adhieren a las propiedades ACID (Atomicidad, Consistencia, Aislamiento y Durabilidad), asegurando que las operaciones críticas (como el registro de una venta que afecta tanto a la tabla Venta como al stock del Producto) se ejecuten completamente o no se ejecuten en absoluto. 
+Dentro de esta estructura, las transacciones anidadas se emplean para modular y estructurar operaciones más complejas. Permiten iniciar transacciones menores dentro del contexto de una transacción principal ya activa. Este enfoque es crucial para gestionar la lógica de negocio con múltiples dependencias, ya que facilita el manejo de errores intermedios. Garantiza que, si una sub-operación falla, la función de reversión (ROLLBACK) pueda restablecer el sistema a su estado original sin comprometer la integridad de la base de datos.
+
+---
+## CAPÍTULO 3: METODOLOGÍA SEGUIDA
+
+---
 ## CAPÍTULO 4: DESARROLLO DEL TEMA
 
 ### 4.1 Diagrama de Modelo Relacional
@@ -186,3 +195,14 @@ El Diccionario de Datos es una herramienta esencial para la gestión de la infor
 | id_metodo_pago | int | 4 | Identificación única para un método de pago | PRIMARY KEY |
 | nombre | varchar | 100 | Nombre del método de pago (efectivo, transferencia, crédito, etc.) | - |
 | proveedor | varchar | 100 | Entidad que facilita el uso del método de pago | - |
+
+---
+## CAPÍTULO 5: CONCLUSIONES
+### Tema 2: “Gestión de Transacciones y Transacciones Anidadas” 
+La implementación de transacciones y transacciones anidadas resultó ser una estrategia clave para asegurar la integridad y consistencia del sistema. Este mecanismo no solo protege la atomicidad de las operaciones críticas, como el registro de ventas y la actualización de stock, sino que también optimiza el manejo de errores, garantizando que los datos sean reversibles en caso de fallos.
+
+---
+## Bibliografía.
+### Tema 2: “Gestión de Transacciones y Transacciones Anidadas” 
+https://learn.microsoft.com/es-es/office/client-developer/access/desktop-database-reference/transaction-processing
+
