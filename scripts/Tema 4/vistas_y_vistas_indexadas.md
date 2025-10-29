@@ -94,9 +94,9 @@ Esta vista indexada está diseñada para **facilitar la supervisión del rendimi
 
 **Pasos requeridos para una Vista Indexada (T-SQL):**
 
-1.  La vista debe crearse con la opción `WITH SCHEMABINDING` para asegurar que las tablas base no puedan ser modificadas de manera que afecten la vista (Información externa).
+1.  La vista debe crearse con la opción `WITH SCHEMABINDING` para asegurar que las tablas base no puedan ser modificadas de manera que afecten la vista.
 2.  Debe incluir agregaciones (como `SUM` o `COUNT_BIG`) (Información externa).
-3.  Se debe crear un índice `UNIQUE CLUSTERED` en la vista para materializar los datos (Información externa).
+3.  Se debe crear un índice `UNIQUE CLUSTERED` en la vista para materializar los datos.
 
 ```sql
 -- =================================================================

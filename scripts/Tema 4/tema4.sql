@@ -2,7 +2,9 @@
 -- VISTAS SQL
 -----------------------------------
 
-USE GestorFranquiciasDB -- Ubicarse en la BD a trabajar
+USE GestorFranquiciasDB;
+GO
+
 -- =================================================================
 -- VISTA ESTÁNDAR: Vw_Detalle_Factura
 -- Propósito: Simplificar la consulta de ventas mostrando el detalle
@@ -39,9 +41,12 @@ JOIN
 JOIN
     Persona P_E ON E.id_persona = P_E.id_persona -- Información de la Persona del Empleado
 JOIN
-    Sucursal SUC ON E.id_sucursal = SUC.id_sucursal -- Sucursal donde trabaja el Empleado;
+    Sucursal SUC ON E.id_sucursal = SUC.id_sucursal; -- Sucursal donde trabaja el Empleado
+GO
 
-
+-- Ejemplo de vista
+SELECT * FROM Vw_Detalle_Factura;
+GO
 
 -- =================================================================
 -- VISTA INDEXADA: VwIdx_Ventas_Agregadas_Sucursal
@@ -82,7 +87,6 @@ ON VwIdx_Ventas_Agregadas_Sucursal (id_sucursal);
 GO
 
 -- Script de Ejecución de Ejemplo (No genera datos, solo muestra cómo consultarla)
-/*
 SELECT
     calle,
     Total_Ingresos,
@@ -91,4 +95,4 @@ FROM
     VwIdx_Ventas_Agregadas_Sucursal
 WHERE
     id_sucursal = 1;
-*/
+GO
