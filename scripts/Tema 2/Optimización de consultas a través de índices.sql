@@ -1,6 +1,6 @@
 
-/*Realizar una carga masiva de por lo menos un mill�n de registro sobre alguna tabla
-que contenga un campo fecha (sin �ndice). Hacerlo con un script para poder automatizarlo.*/
+/*Realizar una carga masiva de por lo menos un millón de registro sobre alguna tabla
+que contenga un campo fecha (sin índice). Hacerlo con un script para poder automatizarlo.*/
 SET NOCOUNT ON;
 
 DECLARE @i INT = 0;
@@ -21,7 +21,7 @@ BEGIN
         id_metodo_pago
     )
     VALUES (
-        -- Fechas aleatorias en los �ltimos 3 a�os
+        -- Fechas aleatorias en los últimos 3 años
         DATEADD(day, - (CAST(RAND(CHECKSUM(NEWID())) * 1095 AS INT)), GETDATE()),
         -- id_cliente aleatorio entre 1 y 6
         CAST(RAND(CHECKSUM(NEWID())) * 6 AS INT) + 1,
@@ -49,3 +49,26 @@ GO
 -- Vemos tdoas las ventas
 SELECT *
 FROM venta;
+
+
+/*
+Realizar una búsqueda por periodo y registrar el plan de ejecución 
+utilizado por el motor y los tiempos de respuesta.
+*/
+
+-- Limpiamos caché y activamos las estadísticas
+DBCC DROPCLEANBUFFERS;
+SET STATISTICS IO ON;
+SET STATISTICS TIME ON;
+GO
+
+-- Búsqueda por periodo 
+SELECT fecha_venta, id_cliente, id_empleado
+FROM Venta
+WHERE fecha_venta BETWEEN '2024-01-01' AND '2024-12-31';
+GO
+
+-- Desactivamos las estadísticas para no afectar futuras consultas
+SET STATISTICS IO OFF;
+SET STATISTICS TIME OFF;
+GO
