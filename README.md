@@ -185,3 +185,15 @@ El Diccionario de Datos es una herramienta esencial para la gestión de la infor
 | id_metodo_pago | int | 4 | Identificación única para un método de pago | PRIMARY KEY |
 | nombre | varchar | 100 | Nombre del método de pago (efectivo, transferencia, crédito, etc.) | - |
 | proveedor | varchar | 100 | Entidad que facilita el uso del método de pago | - |
+
+---
+## CAPÍTULO 5: CONCLUSIONES
+### Tema 3: “Optimización de Índices en SQL Server” 
+Esta serie de pruebas demostró que el rendimiento de una consulta no depende de si existe un índice, sino de si existe el diseño correcto del índice. Logramos transformar una consulta de 4.6 segundos en una de medio segundo y con una lectura lógica de 7833 a solo 78.
+
+Esto comprueba que una estrategia de indexación correcta, diseñada específicamente para las consultas que debe resolver, mejora notablemente el rendimiento de una base de datos.
+
+---
+## Bibliografía.
+### Tema 3: “Optimización de Índices en SQL Server” 
+https://learn.microsoft.com/es-es/sql/relational-databases/indexes/clustered-and-nonclustered-indexes-described?view=sql-server-ver17
