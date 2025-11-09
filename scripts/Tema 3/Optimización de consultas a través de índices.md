@@ -2,7 +2,7 @@
 
 En esta práctica, se analizó el impacto de diferentes estrategias de indexación en una consulta de rango de fechas sobre la tabla `Venta`, que contenía  un millón de registros. El objetivo era comprobar cómo la teoría de los índices de SQL Server se aplica en un escenario real, midiendo el costo de I/O (lecturas lógicas) y el tiempo transcurrido.
 
-El texto teórico de Microsoft indica que los índices "aceleran la recuperación de filas". Nuestra consulta base (la **Búsqueda Sin Índice Útil**), que tardó **4662 ms**, fue nuestro punto de partida para demostrar esta afirmación.
+En la documentacion de Microsoft indica que los índices "aceleran la recuperación de filas". Nuestra consulta base (la **Búsqueda Sin Índice Útil**), que tardó **4662 ms**, fue nuestro punto de partida para demostrar esta afirmación.
 
 ---
 
@@ -60,4 +60,9 @@ Esta serie de pruebas demostró  que el rendimiento de una consulta no depende d
 
 Esto comprueba que una estrategia de indexación correcta, diseñada específicamente para las consultas que debe resolver, mejora 
 notablemente  el rendimiento de una base de datos.
+
+---
+## Bibliografía.
+### Tema 3: “Optimización de Índices en SQL Server” 
+https://learn.microsoft.com/es-es/sql/relational-databases/indexes/clustered-and-nonclustered-indexes-described?view=sql-server-ver17
 
