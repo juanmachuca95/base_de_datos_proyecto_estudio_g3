@@ -3,8 +3,7 @@
    GRUPO 3
    Base de datos: GestorFranquiciasDB
    -------------------------------------------------------
-   En este archivo hago las pruebas de los procedimientos y
-   funciones creadas.
+ 
    ======================================================= */
 
 -- Primero y mas importante verifico que estoy trabajando en la bd correcta
