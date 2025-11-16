@@ -185,3 +185,22 @@ El Diccionario de Datos es una herramienta esencial para la gestión de la infor
 | id_metodo_pago | int | 4 | Identificación única para un método de pago | PRIMARY KEY |
 | nombre | varchar | 100 | Nombre del método de pago (efectivo, transferencia, crédito, etc.) | - |
 | proveedor | varchar | 100 | Entidad que facilita el uso del método de pago | - |
+
+
+---
+## CAPÍTULO 5: CONCLUSIONES
+### Tema 3: “Optimización de Índices en SQL Server” 
+
+
+### Tema 4: "Vistas y Vistas Indexadas en SQL Server"
+Las **Vistas** y **Vistas Indexadas**, son esenciales para la optimización de consultas y la garantía de un rendimiento óptimo. Estos elementos son cruciales para cumplir con los objetivos del sistema, como la provisión de informes gerenciales detallados y la optimización de los procesos de búsqueda y recuperación de datos.
+
+
+---
+## Bibliografía.
+### Tema 3: “Optimización de Índices en SQL Server” 
+https://learn.microsoft.com/es-es/sql/relational-databases/indexes/clustered-and-nonclustered-indexes-described?view=sql-server-ver17
+
+### Tema 4: "Vistas y Vistas Indexadas en SQL Server"
+https://learn.microsoft.com/en-us/sql/t-sql/statements/create-view-transact-sql?view=sql-server-ver17
+https://learn.microsoft.com/es-es/sql/relational-databases/views/create-indexed-views?view=sql-server-ver16 
