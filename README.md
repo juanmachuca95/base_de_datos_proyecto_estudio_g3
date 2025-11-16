@@ -201,8 +201,15 @@ El Diccionario de Datos es una herramienta esencial para la gestión de la infor
 ### Tema 2: “Gestión de Transacciones y Transacciones Anidadas” 
 La implementación de transacciones y transacciones anidadas resultó ser una estrategia clave para asegurar la integridad y consistencia del sistema. Este mecanismo no solo protege la atomicidad de las operaciones críticas, como el registro de ventas y la actualización de stock, sino que también optimiza el manejo de errores, garantizando que los datos sean reversibles en caso de fallos.
 
+### Tema 3: “Optimización de Índices en SQL Server” 
+Esta serie de pruebas demostró que el rendimiento de una consulta no depende de si existe un índice, sino de si existe el diseño correcto del índice. Logramos transformar una consulta de 4.6 segundos en una de medio segundo y con una lectura lógica de 7833 a solo 78.
+
+Esto comprueba que una estrategia de indexación correcta, diseñada específicamente para las consultas que debe resolver, mejora notablemente el rendimiento de una base de datos.
+
 ---
 ## Bibliografía.
 ### Tema 2: “Gestión de Transacciones y Transacciones Anidadas” 
 https://learn.microsoft.com/es-es/office/client-developer/access/desktop-database-reference/transaction-processing
+### Tema 3: “Optimización de Índices en SQL Server” 
+https://learn.microsoft.com/es-es/sql/relational-databases/indexes/clustered-and-nonclustered-indexes-described?view=sql-server-ver17
 
