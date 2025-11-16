@@ -29,7 +29,7 @@ Una **transacción** es una **unidad única de trabajo** en la base de datos. Es
 
 -----
 
-### 📝 Ejemplos Aplicados a Gestor Franquicias
+### Ejemplos Aplicados a Gestor Franquicias
 
 #### **Transacciones de confirmación automática**
 
