@@ -1,3 +1,4 @@
+# Prueba de Rama de Fernandez Gotusso, Maria Daniela (yoquienmas)
 # Proyecto Gestor de Franquicias
 
 ## Integrantes
@@ -74,7 +75,16 @@ Este proyecto se centrará en el procesamiento y la administración de datos cla
 El alcance del proyecto no incluye funcionalidades de integración con proveedores para el reabastecimiento de stock, ni se profundizará en el análisis de datos a un nivel que exceda los informes y reportes básicos para la toma de decisiones a nivel gerencial.
 
 ---
+## CAPITULO 2: MARCO CONCEPTUAL O REFERENCIAL
 
+### Tema 2: “Gestión de Transacciones y Transacciones Anidadas” 
+El manejo de datos en un sistema de administración centralizado demanda un mecanismo riguroso que garantice la integridad operacional. Las transacciones representan la unidad fundamental de trabajo, diseñadas para ser indivisibles. Su implementación es esencial, ya que adhieren a las propiedades ACID (Atomicidad, Consistencia, Aislamiento y Durabilidad), asegurando que las operaciones críticas (como el registro de una venta que afecta tanto a la tabla Venta como al stock del Producto) se ejecuten completamente o no se ejecuten en absoluto. 
+Dentro de esta estructura, las transacciones anidadas se emplean para modular y estructurar operaciones más complejas. Permiten iniciar transacciones menores dentro del contexto de una transacción principal ya activa. Este enfoque es crucial para gestionar la lógica de negocio con múltiples dependencias, ya que facilita el manejo de errores intermedios. Garantiza que, si una sub-operación falla, la función de reversión (ROLLBACK) pueda restablecer el sistema a su estado original sin comprometer la integridad de la base de datos.
+
+---
+## CAPÍTULO 3: METODOLOGÍA SEGUIDA
+
+---
 ## CAPÍTULO 4: DESARROLLO DEL TEMA
 
 ### 4.1 Diagrama de Modelo Relacional
@@ -188,6 +198,9 @@ El Diccionario de Datos es una herramienta esencial para la gestión de la infor
 
 ---
 ## CAPÍTULO 5: CONCLUSIONES
+### Tema 2: “Gestión de Transacciones y Transacciones Anidadas” 
+La implementación de transacciones y transacciones anidadas resultó ser una estrategia clave para asegurar la integridad y consistencia del sistema. Este mecanismo no solo protege la atomicidad de las operaciones críticas, como el registro de ventas y la actualización de stock, sino que también optimiza el manejo de errores, garantizando que los datos sean reversibles en caso de fallos.
+
 ### Tema 3: “Optimización de Índices en SQL Server” 
 Esta serie de pruebas demostró que el rendimiento de una consulta no depende de si existe un índice, sino de si existe el diseño correcto del índice. Logramos transformar una consulta de 4.6 segundos en una de medio segundo y con una lectura lógica de 7833 a solo 78.
 
@@ -195,5 +208,8 @@ Esto comprueba que una estrategia de indexación correcta, diseñada específica
 
 ---
 ## Bibliografía.
+### Tema 2: “Gestión de Transacciones y Transacciones Anidadas” 
+https://learn.microsoft.com/es-es/office/client-developer/access/desktop-database-reference/transaction-processing
 ### Tema 3: “Optimización de Índices en SQL Server” 
 https://learn.microsoft.com/es-es/sql/relational-databases/indexes/clustered-and-nonclustered-indexes-described?view=sql-server-ver17
+
