@@ -198,6 +198,9 @@ El Diccionario de Datos es una herramienta esencial para la gestión de la infor
 
 ---
 ## CAPÍTULO 5: CONCLUSIONES
+## Tema 1: "Procedmimientos y funciones de almacenado"
+Aunque el INSERT directo puede ser más veloz en términos brutos, los procedimientos almacenados son ampliamente superiores en entornos reales debido a su seguridad, consistencia, mantenibilidad y control.
+
 ### Tema 2: “Gestión de Transacciones y Transacciones Anidadas” 
 La implementación de transacciones y transacciones anidadas resultó ser una estrategia clave para asegurar la integridad y consistencia del sistema. Este mecanismo no solo protege la atomicidad de las operaciones críticas, como el registro de ventas y la actualización de stock, sino que también optimiza el manejo de errores, garantizando que los datos sean reversibles en caso de fallos.
 
