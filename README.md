@@ -83,7 +83,7 @@ Dentro de esta estructura, las transacciones anidadas se emplean para modular y 
 ---
 ## CAPÍTULO 3: METODOLOGÍA SEGUIDA
 
-El desarrollo de este proyecto se llevó a cabo mediante un **enfoque grupal y colaborativo**, aprovechando herramientas digitales para garantizar una gestión de trabajo remoto fluida y eficiente.
+En este capítulo se describe el proceso de trabajo adoptado para el desarrollo del proyecto, así como las principales herramientas y procedimientos utilizados. El objetivo es ofrecer una visión clara de cómo se organizó el equipo y qué recursos permitieron llevar adelante las distintas etapas del sistema.
 
 ### a) Cómo se realizó el Trabajo Práctico
 El desarrollo de este proyecto se llevó a cabo mediante un **enfoque grupal y colaborativo**, aprovechando herramientas digitales para garantizar una gestión de trabajo remoto fluida y eficiente.
