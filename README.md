@@ -213,6 +213,8 @@ Las **Vistas** y **Vistas Indexadas**, son esenciales para la optimización de c
 
 ---
 ## Bibliografía.
+## Tema 1: "Procedmimientos y funciones de almacenado"
+https://learn.microsoft.com/es-es/sql/relational-databases/stored-procedures/stored-procedures-database-engine?view=sql-server-ver16
 ### Tema 2: “Gestión de Transacciones y Transacciones Anidadas” 
 https://learn.microsoft.com/es-es/office/client-developer/access/desktop-database-reference/transaction-processing
 ### Tema 3: “Optimización de Índices en SQL Server” 
