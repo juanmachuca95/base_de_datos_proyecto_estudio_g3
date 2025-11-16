@@ -83,6 +83,24 @@ Dentro de esta estructura, las transacciones anidadas se emplean para modular y 
 ---
 ## CAPÍTULO 3: METODOLOGÍA SEGUIDA
 
+En este capítulo se describe el proceso de trabajo adoptado para el desarrollo del proyecto, así como las principales herramientas y procedimientos utilizados. El objetivo es ofrecer una visión clara de cómo se organizó el equipo y qué recursos permitieron llevar adelante las distintas etapas del sistema.
+
+### a) Cómo se realizó el Trabajo Práctico
+El trabajo se llevó a cabo de forma grupal, empleando herramientas colaborativas que facilitaron la coordinación y el trabajo remoto.  
+- **GitHub** se utilizó para gestionar el código y el control de versiones, permitiendo integrar y supervisar los aportes de cada integrante.  
+- **Google Drive** sirvió para almacenar y organizar la documentación, asegurando un acceso rápido y ordenado a los archivos compartidos.
+
+### b) Herramientas (Instrumentos y procedimientos)
+Para el desarrollo del sistema de gestión de ventas se emplearon distintas herramientas tanto para el diseño como para la documentación y la gestión de la base de datos. Entre ellas:
+
+- **ERD Plus:** Creación del modelo entidad–relación, facilitando el diseño de la estructura de la base de datos.  
+- **Draw.io:** Elaboración de diagramas de flujo, casos de uso y representaciones visuales del sistema.  
+- **SQL Server:** Base de datos utilizada para almacenar y gestionar la información del sistema.  
+- **Diagrama Entidad–Relación (DER):** Representación visual de la estructura y relaciones entre las entidades.  
+- **Diagrama de Modelo Relacional:** Representación tabular con los campos y tipos de datos de cada tabla.  
+- **Diccionario de Datos:** Documentación detallada de los campos, tipos de datos y relaciones, sirviendo como guía para la implementación.
+
+
 ---
 ## CAPÍTULO 4: DESARROLLO DEL TEMA
 
