@@ -83,23 +83,29 @@ Dentro de esta estructura, las transacciones anidadas se emplean para modular y 
 ---
 ## CAPÍTULO 3: METODOLOGÍA SEGUIDA
 
-En este capítulo se describe el proceso de trabajo adoptado para el desarrollo del proyecto, así como las principales herramientas y procedimientos utilizados. El objetivo es ofrecer una visión clara de cómo se organizó el equipo y qué recursos permitieron llevar adelante las distintas etapas del sistema.
+El desarrollo de este proyecto se llevó a cabo mediante un **enfoque grupal y colaborativo**, aprovechando herramientas digitales para garantizar una gestión de trabajo remoto fluida y eficiente.
 
 ### a) Cómo se realizó el Trabajo Práctico
-El trabajo se llevó a cabo de forma grupal, empleando herramientas colaborativas que facilitaron la coordinación y el trabajo remoto.  
-- **GitHub** se utilizó para gestionar el código y el control de versiones, permitiendo integrar y supervisar los aportes de cada integrante.  
-- **Google Drive** sirvió para almacenar y organizar la documentación, asegurando un acceso rápido y ordenado a los archivos compartidos.
+El desarrollo de este proyecto se llevó a cabo mediante un **enfoque grupal y colaborativo**, aprovechando herramientas digitales para garantizar una gestión de trabajo remoto fluida y eficiente.
+
+  * **Control de Versiones y Gestión de Código (GitHub):** Utilizamos **GitHub** para el control de versiones, lo que permitió a todos los miembros del equipo integrar sus contribuciones de código de manera organizada, facilitando el seguimiento del progreso y la trazabilidad de los cambios.
+  * **Documentación y Archivos (Google Drive):** Empleamos **Google Drive** para centralizar el almacenamiento y la organización de toda la documentación relevante, asegurando que el material fuera accesible y estuviera actualizado para todos los participantes.
+
 
 ### b) Herramientas (Instrumentos y procedimientos)
-Para el desarrollo del sistema de gestión de ventas se emplearon distintas herramientas tanto para el diseño como para la documentación y la gestión de la base de datos. Entre ellas:
+Para la construcción del sistema de gestión de ventas, se seleccionó un conjunto de herramientas específicas que cubrieron las fases de diseño, implementación y documentación de la base de datos:
 
-- **ERD Plus:** Creación del modelo entidad–relación, facilitando el diseño de la estructura de la base de datos.  
-- **Draw.io:** Elaboración de diagramas de flujo, casos de uso y representaciones visuales del sistema.  
-- **SQL Server:** Base de datos utilizada para almacenar y gestionar la información del sistema.  
-- **Diagrama Entidad–Relación (DER):** Representación visual de la estructura y relaciones entre las entidades.  
-- **Diagrama de Modelo Relacional:** Representación tabular con los campos y tipos de datos de cada tabla.  
-- **Diccionario de Datos:** Documentación detallada de los campos, tipos de datos y relaciones, sirviendo como guía para la implementación.
+  * **Diseño de la Base de Datos (Modelado Conceptual y Lógico):**
+      * **ERD Plus:** Herramienta clave para el diseño inicial del **Modelo Entidad-Relación (MER)**.
+      * **Diagrama Entidad-Relación (DER):** Representación gráfica que visualiza las entidades principales y sus relaciones dentro del sistema.
 
+      * **Diagrama de Modelo Relacional:** Representación esquemática de la base de datos que muestra las tablas definitivas con sus campos (columnas) y tipos de datos correspondientes.
+
+      * **SQL Server:** Servidor de base de datos elegido para la persistencia y la gestión de la información transaccional del sistema.
+
+      * **Documentación de la Estructura:**
+
+      * **Diccionario de Datos:** Documento esencial que detalla de forma exhaustiva los atributos de la base de datos (campos, tipos de datos, descripciones y las relaciones entre tablas), sirviendo como referencia técnica fundamental.
 
 ---
 ## CAPÍTULO 4: DESARROLLO DEL TEMA
