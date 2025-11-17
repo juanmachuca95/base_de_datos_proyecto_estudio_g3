@@ -78,7 +78,7 @@ El alcance del proyecto no incluye funcionalidades de integración con proveedor
 
 ### Tema 1: "Procedimientos y funciones almacenadas"
 
-## Procedimientos Almacenados (Stored Procedures)
+* Procedimientos Almacenados (Stored Procedures)
 
 Los **Procedimientos Almacenados** representan bloques de código SQL precompilado que residen en el servidor de la base de datos. Funcionan como subrutinas o programas que se ejecutan bajo demanda, actuando como una **unidad transaccional y lógica**.
 
@@ -86,7 +86,7 @@ Los **Procedimientos Almacenados** representan bloques de código SQL precompila
 * **Interacción:** Pueden recibir **parámetros de entrada** para personalizar su ejecución y devolver **parámetros de salida** con resultados o mensajes de estado.
 * **Ventajas Clave:** Ofrecen un mejor **rendimiento** debido a su compilación previa y facilitan la **seguridad**, ya que permiten a los usuarios interactuar con los datos solo a través de la lógica encapsulada, sin necesidad de permisos directos sobre las tablas subyacentes.
 
-## Funciones Almacenadas (Stored Functions)
+* Funciones Almacenadas (Stored Functions)
 
 Las **Funciones Almacenadas** son objetos de base de datos diseñados para la **devolución obligatoria de un resultado**. Su propósito primordial es realizar cálculos, transformaciones de datos o devolver información específica.
 
@@ -101,11 +101,11 @@ Dentro de esta estructura, las transacciones anidadas se emplean para modular y 
 
 #### Tema 3: "Optimización de consultas a través de índices"
 
-## Fundamentos de los Índices
+* Fundamentos de los Índices
 
 Un **índice** en una base de datos relacional es una estructura de datos especializada diseñada para **acelerar la búsqueda de información**. Se asemeja al índice de un libro , donde en lugar de leer cada página, se localiza rápidamente la ubicación del contenido deseado. El objetivo primordial de un índice es **reducir drásticamente el tiempo de ejecución de las consultas** (*Query Time*) al evitar el escaneo completo de la tabla (*Full Table Scan*).
 
-## Clasificación y Aplicaciones de los Índices
+* Clasificación y Aplicaciones de los Índices
 
 Los sistemas de gestión de bases de datos (DBMS) ofrecen una variedad de índices, cada uno optimizado para diferentes escenarios:
 
@@ -116,11 +116,11 @@ Los sistemas de gestión de bases de datos (DBMS) ofrecen una variedad de índic
 
 ### Tema 4: "Vistas y vistas indexadas"
 
-## 1. Vistas (Views): La Capa de Abstracción
+* 1. Vistas (Views): La Capa de Abstracción
 
 Una **Vista** es una tabla lógica o abstracta que actúa como una **ventana personalizada** hacia los datos subyacentes de la base de datos. Se definen mediante una sentencia SQL almacenada, pero **no guardan datos propios**; su contenido se genera *en tiempo real* (dinámicamente) cada vez que son consultadas, utilizando la información de las tablas base.
 
-### Funciones Arquitectónicas y Ventajas
+* Funciones Arquitectónicas y Ventajas
 
 Las vistas son una herramienta esencial para la administración y el diseño de sistemas, ofreciendo múltiples beneficios:
 
@@ -129,7 +129,7 @@ Las vistas son una herramienta esencial para la administración y el diseño de 
 * **Personalización:** Adaptan la **percepción del esquema** para diferentes usuarios o aplicaciones, asegurando que cada grupo solo vea el subconjunto de datos que le es pertinente.
 * **Compatibilidad:** Facilitan la **evolución del esquema** de la base de datos sin romper la compatibilidad con aplicaciones antiguas, ya que se puede modificar una tabla base y usar la vista para mantener la estructura de datos que la aplicación espera.
 
-## 2. Vistas Indexadas (Indexed Views o Materialized Views)
+* 2. Vistas Indexadas (Indexed Views o Materialized Views)
 
 Las **Vistas Indexadas** (también conocidas como Vistas Materializadas en otros sistemas) representan una poderosa técnica de optimización que rompe con la naturaleza virtual de las vistas tradicionales.
 
