@@ -82,24 +82,24 @@ El alcance del proyecto no incluye funcionalidades de integración con proveedor
 
 Los **Procedimientos Almacenados** representan bloques de código SQL precompilado que residen en el servidor de la base de datos. Funcionan como subrutinas o programas que se ejecutan bajo demanda, actuando como una **unidad transaccional y lógica**.
 
-* **Propósito:** Sirven para ejecutar tareas complejas de manipulación de datos (como la inserción, actualización o eliminación), realizar lógica de negocio condicional, o ejecutar varias consultas en secuencia.
-* **Interacción:** Pueden recibir **parámetros de entrada** para personalizar su ejecución y devolver **parámetros de salida** con resultados o mensajes de estado.
-* **Ventajas Clave:** Ofrecen un mejor **rendimiento** debido a su compilación previa y facilitan la **seguridad**, ya que permiten a los usuarios interactuar con los datos solo a través de la lógica encapsulada, sin necesidad de permisos directos sobre las tablas subyacentes.
+  * **Propósito:** Sirven para ejecutar tareas complejas de manipulación de datos (como la inserción, actualización o eliminación), realizar lógica de negocio condicional, o ejecutar varias consultas en secuencia.
+  * **Interacción:** Pueden recibir **parámetros de entrada** para personalizar su ejecución y devolver **parámetros de salida** con resultados o mensajes de estado.
+  * **Ventajas Clave:** Ofrecen un mejor **rendimiento** debido a su compilación previa y facilitan la **seguridad**, ya que permiten a los usuarios interactuar con los datos solo a través de la lógica encapsulada, sin necesidad de permisos directos sobre las tablas subyacentes.
 
 * Funciones Almacenadas (Stored Functions)
 
 Las **Funciones Almacenadas** son objetos de base de datos diseñados para la **devolución obligatoria de un resultado**. Su propósito primordial es realizar cálculos, transformaciones de datos o devolver información específica.
 
-* **Diferencia Fundamental:** A diferencia de los procedimientos, una función **siempre regresa un valor** (puede ser un valor escalar, como un número o texto, o una tabla de datos).
-* **Uso:** Están integradas directamente en el lenguaje de consulta. Se pueden invocar dentro de sentencias SQL, como la lista de columnas de un `SELECT` o en las cláusulas `WHERE` o `HAVING`.
-* **Restricciones:** Generalmente, las funciones están sujetas a **reglas más estrictas** y no están destinadas a realizar operaciones que alteren el estado de la base de datos (es decir, **no deben modificar datos** en tablas de forma permanente).
+  * **Diferencia Fundamental:** A diferencia de los procedimientos, una función **siempre regresa un valor** (puede ser un valor escalar, como un número o texto, o una tabla de datos).
+  * **Uso:** Están integradas directamente en el lenguaje de consulta. Se pueden invocar dentro de sentencias SQL, como la lista de columnas de un `SELECT` o en las cláusulas `WHERE` o `HAVING`.
+  * **Restricciones:** Generalmente, las funciones están sujetas a **reglas más estrictas** y no están destinadas a realizar operaciones que alteren el estado de la base de datos (es decir, **no deben modificar datos** en tablas de forma permanente).
 
 ### Tema 2: “Gestión de Transacciones y Transacciones Anidadas” 
 El manejo de datos en un sistema de administración centralizado demanda un mecanismo riguroso que garantice la integridad operacional. Las transacciones representan la unidad fundamental de trabajo, diseñadas para ser indivisibles. Su implementación es esencial, ya que adhieren a las propiedades ACID (Atomicidad, Consistencia, Aislamiento y Durabilidad), asegurando que las operaciones críticas (como el registro de una venta que afecta tanto a la tabla Venta como al stock del Producto) se ejecuten completamente o no se ejecuten en absoluto. 
 Dentro de esta estructura, las transacciones anidadas se emplean para modular y estructurar operaciones más complejas. Permiten iniciar transacciones menores dentro del contexto de una transacción principal ya activa. Este enfoque es crucial para gestionar la lógica de negocio con múltiples dependencias, ya que facilita el manejo de errores intermedios. Garantiza que, si una sub-operación falla, la función de reversión (ROLLBACK) pueda restablecer el sistema a su estado original sin comprometer la integridad de la base de datos.
 
 
-#### Tema 3: "Optimización de consultas a través de índices"
+### Tema 3: "Optimización de consultas a través de índices"
 
 * Fundamentos de los Índices
 
@@ -109,10 +109,10 @@ Un **índice** en una base de datos relacional es una estructura de datos especi
 
 Los sistemas de gestión de bases de datos (DBMS) ofrecen una variedad de índices, cada uno optimizado para diferentes escenarios:
 
-* **Índice Único (Unique Index):** Más allá de la velocidad, su función principal es **garantizar la unicidad** de los valores en una o más columnas, previniendo la inserción de datos duplicados y asegurando la **integridad de los datos**.
-* **Índice Geoespacial (Spatial Index):** Específicamente diseñado para gestionar y consultar datos con **dimensiones geométricas**, como ubicaciones, mapas o áreas geográficas.
-* **Índice Hash (Hash Index):** Emplea una función *hash* para mapear claves de columna a direcciones de memoria. Son extremadamente rápidos para **búsquedas exactas** de igualdad, generalmente almacenados en memoria para un **acceso instantáneo**.
-* **Índice Filtrado (Filtered Index):** Permite aplicar el mecanismo de indexación solo a un **subconjunto de las filas** de la tabla, optimizando el espacio en disco y mejorando la eficiencia para consultas que siempre aplican un criterio de filtrado específico.
+   * **Índice Único (Unique Index):** Más allá de la velocidad, su función principal es **garantizar la unicidad** de los valores en una o más columnas, previniendo la inserción de datos duplicados y asegurando la **integridad de los datos**.
+   * **Índice Geoespacial (Spatial Index):** Específicamente diseñado para gestionar y consultar datos con **dimensiones geométricas**, como ubicaciones, mapas o áreas geográficas.
+   * **Índice Hash (Hash Index):** Emplea una función *hash* para mapear claves de columna a direcciones de memoria. Son extremadamente rápidos para **búsquedas exactas** de igualdad, generalmente almacenados en memoria para un **acceso instantáneo**.
+   * **Índice Filtrado (Filtered Index):** Permite aplicar el mecanismo de indexación solo a un **subconjunto de las filas** de la tabla, optimizando el espacio en disco y mejorando la eficiencia para consultas que siempre aplican un criterio de filtrado específico.
 
 ### Tema 4: "Vistas y vistas indexadas"
 
@@ -120,22 +120,22 @@ Los sistemas de gestión de bases de datos (DBMS) ofrecen una variedad de índic
 
 Una **Vista** es una tabla lógica o abstracta que actúa como una **ventana personalizada** hacia los datos subyacentes de la base de datos. Se definen mediante una sentencia SQL almacenada, pero **no guardan datos propios**; su contenido se genera *en tiempo real* (dinámicamente) cada vez que son consultadas, utilizando la información de las tablas base.
 
-* Funciones Arquitectónicas y Ventajas
+  * **Funciones Arquitectónicas y Ventajas**
 
 Las vistas son una herramienta esencial para la administración y el diseño de sistemas, ofreciendo múltiples beneficios:
 
-* **Simplificación de Consultas:** Abstractúan la complejidad de *joins* intrincados o lógica compleja. Un usuario puede consultar una vista simple en lugar de reescribir una consulta extensa, fomentando la **reutilización de código**.
-* **Mecanismo de Seguridad:** Permiten establecer una **capa de seguridad** fina. Se puede conceder acceso a una vista que solo muestre columnas no sensibles, mientras que las columnas con datos críticos (como salarios o información personal) permanecen ocultas en las tablas base.
-* **Personalización:** Adaptan la **percepción del esquema** para diferentes usuarios o aplicaciones, asegurando que cada grupo solo vea el subconjunto de datos que le es pertinente.
-* **Compatibilidad:** Facilitan la **evolución del esquema** de la base de datos sin romper la compatibilidad con aplicaciones antiguas, ya que se puede modificar una tabla base y usar la vista para mantener la estructura de datos que la aplicación espera.
+   * **Simplificación de Consultas:** Abstractúan la complejidad de *joins* intrincados o lógica compleja. Un usuario puede consultar una vista simple en lugar de reescribir una consulta extensa, fomentando la **reutilización de código**.
+   * **Mecanismo de Seguridad:** Permiten establecer una **capa de seguridad** fina. Se puede conceder acceso a una vista que solo muestre columnas no sensibles, mientras que las columnas con datos críticos (como salarios o información personal) permanecen ocultas en las tablas base.
+   * **Personalización:** Adaptan la **percepción del esquema** para diferentes usuarios o aplicaciones, asegurando que cada grupo solo vea el subconjunto de datos que le es pertinente.
+   * **Compatibilidad:** Facilitan la **evolución del esquema** de la base de datos sin romper la compatibilidad con aplicaciones antiguas, ya que se puede modificar una tabla base y usar la vista para mantener la estructura de datos que la aplicación espera.
 
 * 2. Vistas Indexadas (Indexed Views o Materialized Views)
 
 Las **Vistas Indexadas** (también conocidas como Vistas Materializadas en otros sistemas) representan una poderosa técnica de optimización que rompe con la naturaleza virtual de las vistas tradicionales.
 
-* **Naturaleza Materializada:** A diferencia de una vista estándar, el conjunto de resultados de una vista indexada **se calcula y se almacena físicamente** en el disco como una tabla real.
-* **Optimización del Rendimiento:** Su principal objetivo es la **mejora drástica del rendimiento** para consultas específicas (a menudo aquellas con agregaciones complejas, como *GROUP BY* o *SUM*).
-* **Estructura de Índices:** Llevan un **índice** asociado que se crea directamente sobre esta tabla almacenada. Este índice permite que el optimizador de consultas acceda a los resultados precalculados de manera extremadamente eficiente, en lugar de recalcular la vista a partir de las tablas base cada vez.
+  * **Naturaleza Materializada:** A diferencia de una vista estándar, el conjunto de resultados de una vista indexada **se calcula y se almacena físicamente** en el disco como una tabla real.
+  * **Optimización del Rendimiento:** Su principal objetivo es la **mejora drástica del rendimiento** para consultas específicas (a menudo aquellas con agregaciones complejas, como *GROUP BY* o *SUM*).
+  * **Estructura de Índices:** Llevan un **índice** asociado que se crea directamente sobre esta tabla almacenada. Este índice permite que el optimizador de consultas acceda a los resultados precalculados de manera extremadamente eficiente, en lugar de recalcular la vista a partir de las tablas base cada vez.
 
 ---
 ## CAPÍTULO 3: METODOLOGÍA SEGUIDA
